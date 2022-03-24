@@ -22,15 +22,16 @@ const myData = [
         img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         name: "Charles Nonna",
         ID: "SD/112",
-        Class: "ss1",
+        Class: "JSS1",
         Age: "13",
-        Email: "charlesnonna@gmail.com"
+        Email: "charlesnonna@gmail.com",
+
     },
     {
         img: "https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         name: "Andrew Nonna",
         ID: "SD/113",
-        Class: "ss3",
+        Class: "JSS2",
         Age: "13",
         Email: "charlesnonna@gmail.com"
     },
@@ -38,7 +39,7 @@ const myData = [
         img: "https://images.unsplash.com/photo-1585837146751-a44118595680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8NzYwODI3NzR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
         name: "Charles Nonna",
         ID: "SD/114",
-        Class: "ss1",
+        Class: "JSS3",
         Age: "13",
         Email: "charlesnonna@gmail.com"
     },
@@ -46,7 +47,7 @@ const myData = [
         img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         name: "Charles Nonna",
         ID: "SD/115",
-        Class: "ss1",
+        Class: "SS1",
         Age: "13",
         Email: "charlesnonna@gmail.com"
     },
@@ -54,7 +55,7 @@ const myData = [
         img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         name: "Charles Nonna",
         ID: "SD/116",
-        Class: "ss1",
+        Class: "SS2",
         Age: "13",
         Email: "charlesnonna@gmail.com"
     },
@@ -62,7 +63,7 @@ const myData = [
         img: "https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         name: "James edugbon",
         ID: "SD/117",
-        Class: "jss1",
+        Class: "SS3",
         Age: "13",
         Email: "charlesnonna@gmail.com"
     },
@@ -70,11 +71,68 @@ const myData = [
         img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
         name: "Chiamaka nna",
         ID: "SD/118",
-        Class: "ss3",
+        Class: "JSS1",
         Age: "13",
         Email: "charlesnonna@gmail.com"
-    }
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        name: "Chiamaka nna",
+        ID: "SD/118",
+        Class: "JSS1",
+        Age: "13",
+        Email: "charlesnonna@gmail.com"
+    },
 ]
+
 document.addEventListener('DOMContentLoaded', () => {
     myData.map(data => {
         table.innerHTML += `
@@ -104,6 +162,9 @@ home.addEventListener('click', () => {
 charts.addEventListener('click', () => {
     window.open("../chart/chart.html", "_self")
 })
+classes.addEventListener('click', () => {
+    window.open("../classes/classes.html", "_self")
+})
 
 
 const modal = document.getElementById('myModal')
@@ -112,6 +173,7 @@ console.log(modalDetails)
 table.addEventListener('click', (e) => {
 
     const id = e.target.parentElement.dataset.id
+    console.log(id)
     modal.style.display = "block"
     const user = myData.find(user => user.ID == id)
     modalDetails.innerHTML = `

@@ -50,3 +50,6 @@ dashboard.addEventListener('click', () => {
 charts.addEventListener('click', () => {
     window.open("../chart/chart.html", "_self")
 })
+classes.addEventListener('click', () => {
+    window.open("../classes/classes.html", "_self")
+})

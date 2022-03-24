@@ -2,6 +2,7 @@ const home = document.getElementById('home')
 const chat = document.getElementById('chat')
 const charts = document.getElementById('charts')
 const Addresses = document.getElementById('Addresses')
+const classes = document.getElementById('classes')
 const library = document.getElementById('library')
 const logout = document.getElementById('logout')
 const table = document.getElementById("pop-table")
@@ -104,7 +105,9 @@ home.addEventListener('click', () => {
 charts.addEventListener('click', () => {
     window.open("../chart/chart.html", "_self")
 })
-
+classes.addEventListener('click', () => {
+    window.open("../classes/classes.html", "_self")
+})
 const modal = document.getElementById('myModal')
 table.addEventListener('click', (e) => {
 

@@ -6,73 +6,203 @@ const Addresses = document.getElementById('Addresses')
 const library = document.getElementById('library')
 const logout = document.getElementById('logout')
 const table = document.getElementById("pop-table")
+const classes = document.getElementById('classes')
 const teacherDashboard = document.getElementById("users-tab")
 
-const myData = [
-    {
-        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        name: "Charles Nonna",
-        ID: "TC/112",
-        Address: "Mathematics",
-        Age: "33",
-        Email: "charlesnonna@gmail.com"
+
+
+
+
+let ctx = document.getElementById("population-barchart").getContext('2d');
+let popChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['JSS1', 'JSS2', 'JSS3', 'SSS1', 'SSS2', 'SSS3'],
+        datasets: [{
+            label: '',
+            data: [500, 396, 172, 300, 321, 443],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
+            ],
+            borderWidth: 1
+        }]
+
     },
-    {
-        img: "https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        name: "Andrew Nonna",
-        ID: "TC/112",
-        Address: "English",
-        Age: "34",
-        Email: "charlesnonna@gmail.com"
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false,
+            },
+            title: {
+                display: true,
+                text: 'F.M.S Population by class'
+            },
+            scales: {
+                xAxes: {
+                    gridLines: { display: false }
+                },
+                yAxes: {
+                    gridLines: { display: false }
+                }
+            }
+        }
+
     },
-    {
-        img: "https://images.unsplash.com/photo-1585837146751-a44118595680?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTR8NzYwODI3NzR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
-        name: "Charles Nonna",
-        ID: "TC/112",
-        Address: "Yoruba",
-        Age: "23",
-        Email: "charlesnonna@gmail.com"
+
+});
+
+let ctp = document.getElementById('pie').getContext('2d')
+let pChart = new Chart(ctp, {
+    type: 'doughnut',
+    data: {
+        labels: ['JSS1', 'JSS2', 'JSS3', 'SSS1', 'SSS2', 'SSS3'],
+        datasets: [{
+            data: [20, 9, 32, 33, 24],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
+            ],
+            borderWidth: 1
+        }]
     },
-    {
-        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        name: "Charles Nonna",
-        ID: "TC/112",
-        Address: "Physics",
-        Age: "36",
-        Email: "charlesnonna@gmail.com"
+    options: {
+        responsive: true,
+        plugins: {
+            title: {
+                display: true,
+                text: 'Admissions by class'
+            },
+            scales: {
+                xAxes: {
+                    gridLines: { display: false }
+                },
+                yAxes: {
+                    gridLines: { display: false }
+                }
+            }
+        }
+
     },
-    {
-        img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        name: "Charles Nonna",
-        ID: "TC/112",
-        Address: "Biology",
-        Age: "45",
-        Email: "charlesnonna@gmail.com"
+})
+
+let ctl = document.getElementById('lines').getContext('2d')
+let lChart = new Chart(ctl, {
+    type: 'line',
+    data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022'],
+        datasets: [{
+            data: [1120, 1109, 1032, 1133, 1104, 1167],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 206, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(153, 102, 255)',
+                'rgb(255, 159, 64)'
+            ],
+            borderWidth: 1
+        }]
     },
-    {
-        img: "https://images.unsplash.com/photo-1592334873219-42ca023e48ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3w3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        name: "James edugbon",
-        ID: "TC/112",
-        Address: "Agriculture",
-        Age: "26",
-        Email: "charlesnonna@gmail.com"
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false,
+            },
+            title: {
+                display: true,
+                text: 'Total population in recent years'
+            },
+            scales: {
+                xAxes: {
+                    gridLines: { display: false }
+                },
+                yAxes: {
+                    gridLines: { display: false }
+                }
+            }
+        }
+
     },
-    {
-        img: "https://images.unsplash.com/photo-1581824043583-6904b080a19c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw3NjA4Mjc3NHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
-        name: "Chiamaka nna",
-        ID: "TC/114",
-        Address: "Computer-Science",
-        Age: "56",
-        Email: "charlesnonna@gmail.com"
-    }
-]
+})
+
+let cte = document.getElementById('exp').getContext('2d')
+let eChart = new Chart(cte, {
+    type: 'scatter',
+    data: {
+        labels: ['2017', '2018', '2019', '2020', '2021', '2022'],
+        datasets: [{
+            data: [200000, 300000, 103220, 245000, 200000, 300000],
+            backgroundColor: [
+                'rgb(255, 99, 132)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false,
+            },
+            title: {
+                display: true,
+                text: 'Financial Expenses'
+            },
+            scales: {
+                xAxes: {
+                    gridLines: { display: false }
+                },
+                yAxes: {
+                    gridLines: { display: false }
+                }
+            }
+        }
+
+    },
+})
+
 
 home.addEventListener('click', () => {
     window.open("../admin/admin.html", "_self")
 })
-charts.addEventListener('click', () => {
-    window.open("../chart/chart.html", "_self")
-})
 dashboard.addEventListener('click', () => {
     window.open("../dashboard/dashboard.html", "_self")
+})
+classes.addEventListener('click', () => {
+    window.open("../classes/classes.html", "_self")
 })

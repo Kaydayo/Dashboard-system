@@ -5,6 +5,7 @@ const Addresses = document.getElementById('Addresses')
 const library = document.getElementById('library')
 const logout = document.getElementById('logout')
 const table = document.getElementById("pop-table")
+const classes = document.getElementById('classes')
 const teacherPDashboard = document.getElementById("users-tab")
 teacherPDashboard.addEventListener('click', (e) => {
     console.log(e.target.id)
@@ -103,6 +104,9 @@ home.addEventListener('click', () => {
 })
 charts.addEventListener('click', () => {
     window.open("../chart/chart.html", "_self")
+})
+classes.addEventListener('click', () => {
+    window.open("../classes/classes.html", "_self")
 })
 const modal = document.getElementById('myModal')
 table.addEventListener('click', (e) => {
