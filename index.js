@@ -45,11 +45,11 @@ const getNewQuote = async () => {
 getNewQuote()
 
 dashboard.addEventListener('click', () => {
-    window.open("../dashboard/dashboard.html", "_self")
+    window.open("../../dashboard/dashboard.html", "_self")
 })
 charts.addEventListener('click', () => {
-    window.open("../chart/chart.html", "_self")
+    window.open("../../chart/chart.html", "_self")
 })
 classes.addEventListener('click', () => {
-    window.open("../classes/classes.html", "_self")
+    window.open("../../classes/classes.html", "_self")
 })
